@@ -1,0 +1,41 @@
+/* src/components/CategorySelector/CategorySelector.css */
+.category-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Permite scroll horizontal si hay muchas categorías */
+  padding: 16px 4px;
+  margin-bottom: 8px;
+  scroll-behavior: smooth;
+  /* Oculta la barra de scroll molesta en navegadores */
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.category-container::-webkit-scrollbar {
+  display: none; /* Oculta el scrollbar en Chrome/Safari */
+}
+
+.category-btn {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap; /* Evita que el texto del botón se rompa en dos líneas */
+  transition: all 0.2s ease;
+}
+
+/* Estilo cuando el botón está seleccionado */
+.category-btn.active {
+  background-color: #dc2626; /* Nuestro Rojo Criollo */
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(220, 38, 38, 0.25);
+}
+
+.category-btn:hover:not(.active) {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}

@@ -1,0 +1,158 @@
+/* src/App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  
+  /* CAMBIA ESTO: de 100vh a auto */
+  min-height: auto;
+  height: 100%; 
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-left: 1px solid #e7e5e4;
+  border-right: 1px solid #e7e5e4;
+  position: relative;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Esto permite que el contenido ocupe el espacio sin estirarse forzadamente */
+  flex: 1; 
+}
+
+/* --- BUSCADOR REFINADO --- */
+.search-wrapper {
+  padding: 12px 20px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0 16px;
+  border: 1px solid #e5e7eb;
+  height: 44px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.search-box:focus-within {
+  border-color: #111827;
+  box-shadow: 0 0 0 1px #111827;
+}
+
+.search-icon {
+  color: #9ca3af;
+  margin-right: 12px;
+  flex-shrink: 0;
+  width: 18px;
+}
+
+.main-search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  color: #1f2937;
+}
+
+/* --- RESULTADOS Y CATEGORÍAS --- */
+.categories-page {
+  width: 100%;
+  padding: 0 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-category-title {
+  font-size: 18px; /* Reducido para mejor balance */
+  font-weight: 700;
+  color: #111827;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.no-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* --- CARDS DE CATEGORÍAS --- */
+.category-card {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: 1px solid transparent; /* Alineación compensada */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.category-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* --- BOTÓN VOLVER --- */
+.back-categories-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}

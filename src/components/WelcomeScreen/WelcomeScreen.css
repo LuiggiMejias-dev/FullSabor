@@ -1,0 +1,100 @@
+/* src/components/WelcomeScreen/WelcomeScreen.css */
+.welcome-screen {
+  width: 100%;
+  height: 100vh;
+  /* Imagen estable de alta calidad con temática gastronómica y tonos oscuros */
+  background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Capa oscura superior para dar un contraste premium y legibilidad */
+.welcome-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.welcome-branding {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.welcome-logo {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.logo-red-accent {
+  color: #dc2626; /* Rojo Criollo */
+}
+
+.welcome-tagline {
+  color: #f3f4f6;
+  font-size: 13px;
+  margin-top: 6px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Tarjeta inferior con efecto Glassmorphism (Vidrio translúcido) */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.12); /* Fondo blanco semi-transparente */
+  backdrop-filter: blur(16px); /* Difumina el fondo de la imagen */
+  -webkit-backdrop-filter: blur(16px); /* Compatibilidad para motores basados en Safari */
+  padding: 32px 24px;
+  border-radius: 28px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde brillante sutil */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); /* Sombra profunda para dar relieve */
+  margin-bottom: 20px;
+}
+
+.welcome-card h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff; /* Texto en blanco para resaltar sobre el vidrio */
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.welcome-card p {
+  font-size: 15px;
+  color: #e5e7eb; /* Gris claro suave */
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+/* Botón de acción principal en Rojo Intenso */
+.start-button {
+  width: 100%;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
+}
+
+.start-button:hover {
+  background-color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.start-button:active {
+  transform: translateY(0);
+}

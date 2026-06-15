@@ -1,0 +1,47 @@
+/* src/components/Navbar/BottomNav.css */
+
+.bottom-nav {
+  /* Usamos un posicionamiento que se mantiene al final del contenedor padre */
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 65px; /* Un poco más de altura para mejor ergonomía */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e7e5e4;
+  
+  /* Asegura que esté por encima de otros elementos pero dentro del contenedor */
+  z-index: 10;
+  
+  /* Evita que se vea cortado si hay elementos debajo */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* Flex permite que el texto se alinee bien */
+  flex: 1;
+  height: 100%;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #dc2626; /* Tu Rojo Criollo */
+  background-color: #fef2f2; /* Un toque suave al tocar */
+}
+
+.nav-icon {
+  font-size: 20px;
+}

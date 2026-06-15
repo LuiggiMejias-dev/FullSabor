@@ -1,0 +1,25 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #e5e7eb; /* Fondo gris externo */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 430px; /* Dimensiones de pantalla móvil moderna */
+  background-color: #ffffff; /* Fondo interno de la app */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
