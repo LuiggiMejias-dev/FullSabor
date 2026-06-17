@@ -8,7 +8,7 @@ function Navbar({ onOpenCart }) {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <span className="logo-text">Come<span className="logo-accent">Pe</span></span>
+        <span className="logo-text">Full<span className="logo-accent">Sabor</span></span>
       </div>
       <div className="navbar-cart">
         <button className="cart-button" onClick={onOpenCart}>

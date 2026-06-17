@@ -7,7 +7,7 @@ function WelcomeScreen({ onStart }) {
     <div className="welcome-screen">
       <div className="welcome-overlay">
         <div className="welcome-branding">
-          <span className="welcome-logo">Come<span className="logo-red-accent">Pe</span></span>
+          <span className="welcome-logo">Full<span className="logo-red-accent">Sabor</span></span>
           <p className="welcome-tagline">El verdadero sabor peruano</p>
         </div>
 
